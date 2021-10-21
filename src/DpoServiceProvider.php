@@ -19,7 +19,7 @@ class DpoServiceProvider extends PackageServiceProvider
             ->name('dpo-laravel')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_dpo_laravel_table')
+            ->hasMigration('2021_10_20_222228_create_direct_pays_table')
             ->hasCommand(DpoCommand::class);
     }
 }
