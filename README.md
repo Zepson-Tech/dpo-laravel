@@ -57,7 +57,7 @@ Install the package Via Composer
 ```
  Now You can Publish the configuration File and Migration
 ```sh
-  php artisan vendor:publish --provider="Spatie\Skeleton\SkeletonServiceProvider" --tag=":package_name-migrations"
+  php artisan vendor:publish --provider="Zepson\Dpo\DpoServiceProvider" --tag="dpo-laravel-migrations"
 ```
 
    Migrate The Database table[OPTIONAL]
