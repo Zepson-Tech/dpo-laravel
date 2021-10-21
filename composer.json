@@ -1,0 +1,59 @@
+{
+    "name": "zepson/dpo-laravel",
+    "description": "A simple package to add DPO API to your laravel application and make payment processing much easy",
+    "keywords": [
+        "zepson",
+        "dpo-laravel"
+    ],
+    "homepage": "https://github.com/zepson/dpo-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zepson Technologies",
+            "email": "ujumbe@zepson.co.tz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "spatie/laravel-package-tools": "^1.1",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3",
+        "spatie/laravel-ray": "^1.9",
+        "vimeo/psalm": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zepson\\Dpo\\": "src",
+            "Zepson\\Dpo\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zepson\\Dpo\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zepson\\Dpo\\DpoServiceProvider"
+            ],
+            "aliases": {
+                "Dpo": "Zepson\\Dpo\\DpoFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
