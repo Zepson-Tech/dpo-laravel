@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \Zepson\Dpo\Dpo
+ * 
  */
 class DpoFacade extends Facade
 {
