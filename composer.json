@@ -2,6 +2,7 @@
     "name": "zepson/dpo-laravel",
     "description": "A simple package to add DPO API to your laravel application and make payment processing much easy",
     "keywords": [
+        "dpo",
         "zepson",
         "dpo-laravel"
     ],
