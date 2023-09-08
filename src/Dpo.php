@@ -31,7 +31,7 @@ class Dpo
         $this->company_type = config("dpo-laravel.account_type");
         $this->dpo_back_url = config("dpo-laravel.back_url");
         $this->dpo_redirect_url = config("dpo-laravel.redirect_url");
-        if (false) {
+        if ($this->testMode) {
             $this->dpoUrl = self::DPO_URL_TEST;
         } else {
             $this->dpoUrl = self::DPO_URL_LIVE;
